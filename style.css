@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'KCC-Ganpan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'KCC-Ganpan';
+}
+
+body {
+    background-color: rgb(189, 188, 188);
+
+}
+
+header {
+    height: 40px;
+    background-color: grey;
+}
+
+main {
+    height: 640px;
+    width: 750px;
+    margin: 0 auto;
+    background-color: pink
+}
+
+footer {
+    height: 200px;
+    background-color: #F69F8B;
+    text-align: center;
+    padding: 25px;
+    color: grey;
+}
+
+#top {
+    height: 35px;
+    background-color: gainsboro;
+    margin-bottom: 25px;
+    ;
+    text-align: center;
+    line-height: 35px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+#container {
+    height: 410px;
+    padding: 10px;
+    background-color: darksalmon;
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+aside {
+    height: 110px;
+    background-color: beige;
+    margin: 30px 20px 30px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    /* margin: 0 15 60 15; */
+}
+
+section {
+    height: 45%;
+    width: 30%;
+    background-color: white;
+    border-radius: 7px;
+}
+
+section p {
+    padding: 27px;
+    text-align: center;
+    position: relative;
+}
+
+#team {
+    width: 470px;
+    height: 100%;
+    background-color: gainsboro;
+    /* float:left; */
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+#team p {
+    font-size: small;
+}
+
+.debug {
+    text-align: left;
+}
+
+#hi {
+    width: 230px;
+    height: 100%;
+    background-color: bisque;
+    /* float: right; */
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+}
+
+#mbti {
+    background-image: url("./images/infj.png");
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+#mbti:hover {
+    transform: scale(1.2);
+    transition: all 0.2s linear;
+}
+
+#cat {
+    background-image: url("./images/cat.jpg");
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+
+#cat:hover {
+    transform: scale(1.2);
+    transition: all 0.2s linear;
+}
+
+#movie {
+    background-image: url("./images/movie.jpeg");
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+#movie:hover {
+    transform: scale(1.2);
+    transition: all 0.2s linear;
+}
+
+.bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+}
+
+@media(max-width: 800px) {
+    #main-container {
+        display: none;
+    }
+
+    #alert {
+        text-align: center;
+        margin-top: 30px;
+        font-size: large;
+        color: red;
+        display: block;
+    }
+}
